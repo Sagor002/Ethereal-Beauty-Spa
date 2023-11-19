@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1rem",
+              sm: 0,
+            },
+          },
+          fontFamily: {
+            sans: ["Bai Jamjuree", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              black: "#1c1d21",
+              white: "#f1e3e4",
+              gray: "#ccbcbc",
+              violet: "#a288a6",
+              cream: "#bb9bb0",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Ethereal Beauty Spa</title>
+  </head>
+  <body class="bg-white text-black overflow-x-hidden">
+    <!-- header -->.
+    <header
+      class="h-20 border-b border-cream flex item-center fixed z-[100] top-0 left-0 right-0 w-full bg-black/80 backdrop-blur-xl"
+    >
+      <!-- navbar -->
+      <nav class="container flex justify-between items-center gap-5">
+        <!-- logo -->
+        <a href="#" class="text-xl lowercase font-semibold text-violet"
+          >Etheral<span class="text-white">.</span></a
+        >
+        <!-- Nav links -->
+        <ul class="gap-5 items-center hidden sm:flex">
+          <li>
+            <a
+              href="#"
+              class="text-cream hover:text-white duretion-300 ease-in-out"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-cream hover:text-white duretion-300 ease-in-out"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="text-cream hover:text-white duretion-300 ease-in-out"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#shop"
+              class="text-cream hover:text-white duretion-300 ease-in-out"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#appointment"
+              class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-cream transition duretion-300 ease-in-out"
+              >Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="mt-20">
+      <!-- hero -->
+      <section
+        class="h-[calc(100vh-5rem)] bg-no-repeat bg-center bg-cover relative"
+        style="background-image: url(./assets/images/hero.jpg)"
+      >
+        <!-- overlay -->
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]"
+        ></div>
+
+        <!-- contents -->
+        <div
+          class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center gap-5 relative"
+        >
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl"
+          >
+            Unveiling Radiance in Our Exclusive 'For Her' Oasis
+          </h1>
+          <p class="text-gray max-w-6xl text-center">
+            Step into a world crafted exclusively for her at Ethereal Beauty
+            Parlor and Spa. Indulge in a symphony of tailored treatments, from
+            rejuvenating facials to precision hair styling, all delivered with a
+            touch of sophistication and care.
+          </p>
+          <a
+            href="#make an appointment"
+            class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-cream transition duretion-300 ease-in-out"
+            >Make an Appointmen</a
+          >
+
+          <!-- scroll down button -->
+          <a
+            href="#services"
+            class="absolute left-1/2 -translate-x-1/2 bottom-10 flex flex-col gap2.5 items-center text-gray"
+          >
+            <span>Scroll Down</span>
+            <span class="animate-bounce"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mouse"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="7" />
+                <path d="M12 6v4" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section id="services" class="pt-20 bg-cream">
+        <!-- section title -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-white font-semibold tracking-widest"
+            >Taking Care of you</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">
+            Professional massage and spa center
+          </h3>
+        </div>
+
+        <!-- service Wrapper -->
+        <div class="container grid grid-cols-1 sm:grid-cols-3 gap-10 pb-20">
+          <!-- service 1 -->
+          <div class="flex flex-col gap-5 text-center items-center">
+            <div class="h-40 w-4o rounded-full overflow-hidden">
+              <img
+                src="./assets/images/service-1.jpg"
+                alt="service 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 items-center">
+              <span class="text-white uppercase tracking-widest"
+                >BEST PRODUCTS</span
+              >
+              <h4 class="text-3xl">Online appointments</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a
+                href="#appoinment"
+                class="inline-block w-10 h-10 bg-white rounded-full flex justify-center items-center hover:bg-violet transition duretion-300 ease-in-out"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- service 2 -->
+          <div class="flex flex-col gap-5 text-center items-center">
+            <div class="h-40 w-4o rounded-full overflow-hidden">
+              <img
+                src="./assets/images/service-2.jpg"
+                alt="service 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 items-center">
+              <span class="text-white uppercase tracking-widest"
+                >BEST PRODUCTS</span
+              >
+              <h4 class="text-3xl">Gift cards available</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a
+                href="#appoinment"
+                class="inline-block w-10 h-10 bg-white rounded-full flex justify-center items-center hover:bg-violet transition duretion-300 ease-in-out"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- service 3 -->
+          <div class="flex flex-col gap-5 text-center items-center">
+            <div class="h-40 w-4o rounded-full overflow-hidden">
+              <img
+                src="./assets/images/service-3.jpg"
+                alt="service 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 items-center">
+              <span class="text-white uppercase tracking-widest"
+                >BEST PRODUCTS</span
+              >
+              <h4 class="text-3xl">Special offers</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a
+                href="#appoinment"
+                class="inline-block w-10 h-10 bg-white rounded-full flex justify-center items-center hover:bg-violet transition duretion-300 ease-in-out"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Service -->
+        <div class="py-20 bg-white">
+          <!-- section title -->
+          <div
+            class="container text-center flex flex-col items-center gap-1.5 mb-10"
+          >
+            <span class="uppercase text-gray font-semibold tracking-widest"
+              >Our popular services</span
+            >
+            <h3 class="text-4xl font-medium max-w-lg">
+              Memorable Beauty experience
+            </h3>
+          </div>
+
+          <!-- popular services wrapper -->
+          <div
+            class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 flex"
+          >
+            <!-- popular service 1 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-1.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Essential Oils</h5>
+              <p>We choose only natural products for our procedures.</p>
+            </div>
+
+            <!-- popular service 2 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-2.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Rehabilitation</h5>
+              <p>Recovery after the injuries, surgeries and sport events.</p>
+            </div>
+
+            <!-- popular service 3 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-3.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Spa procedures</h5>
+              <p>Skin treatments for the entire body,, face and nails.</p>
+            </div>
+
+            <!-- popular service 4 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-4.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Relax massage</h5>
+              <p>The best way to get rid of daily stress and recuperate.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Banner -->
+        <div class="py-20 bg-white">
+          <div
+            class="container flex items-center justify-center relative gap-10 flex-wrap"
+          >
+            <!-- banner -->
+            <div
+              class="w-[20rem] h-[20rem xl:w-[30rem] h-[30rem] overflow-hidden"
+            >
+              <img
+                src="./assets/images/service-banner.jpg"
+                alt="Service banner"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <!-- CTA -->
+            <div
+              class="absolute top-10 right-[18%] w-[20rem] h-[20rem] bg-gradient-to-tl from-rose-500/80 to-pink-500/80 backdrop-blur-xl text-white p-10 flex flex-col gap-5 items-start justify-center"
+            >
+              <h5 class="text-2xl">Relax Now</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+              <a
+                href="#services"
+                class="bg-transparent text-white px-5 py-3 rounded-full font-medium border-2 border-white hover:bg-cream transition duretion-300 ease-in-out inline-block"
+                >Our services</a
+              >
+            </div>
+            <!-- Hours -->
+            <div
+              class="absolute -bottom-10 left-[18%] w-[20rem] h-[20rem] bg-violet/80 backdrop-blur-xl p-10 flex flex-col justify-center items-start text-white"
+            >
+              <h5 class="text-2xl">Open hours</h5>
+              <p class="pt-5">Welcome to the amazing & spa!</p>
+              <p>We are happy to help you!</p>
+              <ul class="pl-7 pt-5">
+                <li class="list-disc">Fri: Closed</li>
+                <li class="list-disc">Sat-Mon: 10AM-6PM</li>
+                <li class="list-disc">Tue-thur: 10AM-8PM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- prices -->
+      <section id="prices" class="py-20 bg-stone-100 relative">
+        <!-- section title -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Service plans</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Special Pricing</h3>
+        </div>
+
+        <!-- price wrapper -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+          <!-- left grid items -->
+          <div class="flex flex-col gap-5">
+            <!-- item 1 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full Body Massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>If you feel tired and stressed after work.</p>
+              </div>
+              <h6 class="text-xl font-medium">$55</h6>
+            </div>
+
+            <!-- item 2 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Stress Relief Massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>Choose a single massage or take session.</p>
+              </div>
+              <h6 class="text-xl font-medium">$70</h6>
+            </div>
+            <!-- item 3 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Body Exfoliant Scrub
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>Helps detox the body and reduce cellulite.</p>
+              </div>
+              <h6 class="text-xl font-medium">$45</h6>
+            </div>
+          </div>
+
+          <!-- right grid items -->
+          <div class="flex flex-col gap-5">
+            <!-- item 1 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Hot Strone Massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>Perfect to relieve back and muscle pains.</p>
+              </div>
+              <h6 class="text-xl font-medium">$60</h6>
+            </div>
+            <!-- item 2 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Aromatherapy Massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>Prevents seasonal flu and improves sleep.</p>
+              </div>
+              <h6 class="text-xl font-medium">$30</h6>
+            </div>
+            <!-- item 3 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Relaxing Head Massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>Get rid of the neck pains and headaches</p>
+              </div>
+              <h6 class="text-xl font-medium">$80</h6>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-0 bottom-0 w-80 h-80 opacity-10">
+          <img src="./assets/images/monstera.png" alt="monstera" />
+        </div>
+      </section>
+
+      <!-- shop -->
+      <section id="shop" class="py-20 bg-white">
+        <!-- section title -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Our Shop</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Check our goods</h3>
+        </div>
+
+        <!-- product wrapper -->
+        <div
+          class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+        >
+          <!-- item 1 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-1.jpg"
+                alt="product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 text-center items-center">
+              <span class="uppercase font-medium text-cyan-400"
+                >NIGHT, SIMPLE, YOUNG</span
+              >
+              <h5 class="text-2xl font-medium">Vitamin C serum</h5>
+              <h6 class="text-xl">$65.00</h6>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-2.jpg"
+                alt="product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 text-center items-center">
+              <span class="uppercase font-medium text-cyan-400"
+                >MORNING, SALE, YOUNG</span
+              >
+              <h5 class="text-2xl font-medium">Organic soap</h5>
+              <h6 class="text-xl">$65.00</h6>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-3.jpg"
+                alt="product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 text-center items-center">
+              <span class="uppercase font-medium text-cyan-400"
+                >AGNIG, NIGHT, YOUNG</span
+              >
+              <h5 class="text-2xl font-medium">Moisturizing lotion</h5>
+              <h6 class="text-xl">$49.00</h6>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-4.jpeg"
+                alt="product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex flex-col gap-1.5 text-center items-center">
+              <span class="uppercase font-medium text-cyan-400"
+                >MORNING, VARIABLE, YOUNG</span
+              >
+              <h5 class="text-2xl font-medium">Stimulating skincare</h5>
+              <h6 class="text-xl">$220.00</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="mt-10 flex justify-center">
+          <button
+            class="h-32 w-32 bg-cream text-white p-5 rounded-full font-medium border-2 border-cream hover:bg-transparent transition duretion-300 ease-in-out hover:text-cream"
+          >
+            View More
+          </button>
+        </div>
+      </section>
+
+      <!-- Cta Banner -->
+      <section
+        class="h-[60vh] bg-no-repeat bg-center bg-cover bg-fixed relative"
+        style="background-image: url(./assets/images/cta-banner.jpg)"
+      >
+        <!-- overlay -->
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]"
+        ></div>
+        <!-- contents -->
+        <div
+          class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center relative"
+        >
+          <span class="uppercase text-white font-semibold tracking-widest"
+            >OUR SPECIAL OFFER</span
+          >
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl"
+          >
+            An incredible spa experience
+          </h1>
+          <a
+            href="#make an appointment"
+            class="bg-violet text-white mt-5 px-5 py-3 rounded-full font-medium hover:bg-pink-500 transition duretion-300 ease-in-out"
+            >Make an Appointmen</a
+          >
+        </div>
+      </section>
+
+      <!-- Appointment -->
+      <section id="appointment" class="py-20 bg-stone-100">
+        <!-- appointment wrapper -->
+        <div
+          class="container grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center text-center text-black/80"
+        >
+          <!-- appointment 1 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-semibold">Open Hours</h5>
+            <ul class="pl-7 pt-5">
+              <li>Mon=Fri: 9 AM - 6PM</li>
+              <li>Saturday: 9AM-6PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+
+          <!-- appointment 2 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-semibold">Address</h5>
+            <div>
+              <p>
+                123 Taikaru, Street,Mid Tokyo<br />
+                TO-12001
+              </p>
+              <button class="underline">Check Location</button>
+            </div>
+          </div>
+
+          <!-- appointment 3 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-semibold">Get In Touch</h5>
+            <div>
+              <p>Telephone: +123-456-789</p>
+              <p>Email: info@ethereal.com</p>
+              <button class="underline">Contact Form</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="py-20 bg-stone-100">
+        <!-- section title -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Newsletter</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Want to get updates?</h3>
+        </div>
+        <form class="container max-w-2xl text-center flex flex-col gap-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis
+            quisquam enim commodi eos voluptas eaque similique molestiae animi
+            dolor officiis, ullam, libero voluptates distinctio laudantium,
+            sequi quaerat exercitationem expedita.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-5 items-center">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 bg-transparent border-2 border-dashed border-cream rounded-xl outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-violet rounded-xl px-5 py-4 flex uppercase text-white font-semibold tracking-widest hover:bg-cream transition duretion-300 ease-in-out"
+            >
+              <span class="pr-5"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-send"
+                >
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                  <path d="M22 2 11 13" /></svg></span
+              >Subscribe
+            </button>
+          </div>
+          <div class="absolute right-0 w-80 h-80 opacity-10">
+            <img src="./assets/images/monstera.png" alt="monstera" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container py-10 grid grid-cols-2 justify-between">
+        <p class="text-cream text-lg text-center sm:text-left">
+          &copy; 2023,<span class="underline">Ethereal Spa</span>. All rights
+          reserved.
+        </p>
+        <div class="container text-gray justify-center flex gap-5">
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </span>
+          </div>
+          <div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
